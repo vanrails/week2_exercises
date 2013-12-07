@@ -40,7 +40,7 @@ class Blackjack
 
   def get_player
     say('What is your name?')
-    p_name = 'muam' # gets.chomp
+    p_name = gets.chomp
 
     Player.new(p_name)
   end
