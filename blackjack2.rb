@@ -38,6 +38,8 @@ class Blackjack
     winner?
   end
 
+  protected
+
   def get_player
     say('What is your name?')
     p_name = gets.chomp
@@ -176,6 +178,8 @@ class Hand
     end
     hand_string + "with a value of #{@value}"
   end
+
+  protected
 
   def calculate_value
     val = 0
